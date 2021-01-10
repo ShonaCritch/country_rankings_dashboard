@@ -15,7 +15,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "s
 
 # Remove tracking modifications
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
+db = SQLAlchemy(app)
 #database_path = "./sqlite_db/countries_info_sqlite.db"
 #engine = create_engine(f"sqlite:///{database_path}")
 #engine = create_engine("sqlite:///.countries_info_sqlite")
