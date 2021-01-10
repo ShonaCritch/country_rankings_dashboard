@@ -10,12 +10,12 @@ from flask import Flask, render_template
 # Database Setup
 #################################################
 
-from flask_sqlalchemy import SQLAlchemy
+#from flask_sqlalchemy import SQLAlchemy
 #app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///sqlite_db/countries_info_sqlite.db"
 
 # Remove tracking modifications
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
+#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+#db = SQLAlchemy(app)
 database_path = "./sqlite_db/countries_info_sqlite.db"
 engine = create_engine(f"sqlite:///{database_path}")
 
