@@ -1,5 +1,4 @@
-#from <name of sqlite db folder>.app import db
-from sqlite_db.app import db
+from app import db
 
 # db.drop_all()
 db.create_all()
