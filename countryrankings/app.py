@@ -11,7 +11,7 @@ from flask import Flask, render_template
 #################################################
 
 from flask_sqlalchemy import SQLAlchemy
-app.config['SQLALCHEMY_DATABASE_URI'] = "./sqlite_db/countries_info_sqlite.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "./countryrankings/sqlite_db/countries_info_sqlite.db"
 
 # Remove tracking modifications
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
