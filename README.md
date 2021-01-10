@@ -1,32 +1,32 @@
-# project-2
-Project 2 Proposal
+# Rankings_Dashboard =
+a [“light-hearted”] visualisation OF unrelated_topic_rankings FOR a SELECT number_of_the_worlds_countries.
 
-Team: Kevin, Sasith, Victor and Shona
+Team: Sasith, Kevin and Shona
 
-Aim: 
-A dashboard that displays top 5-10 'fun facts' about a country.
+Output:
+An interactive dashboard that enables users to choose from a list of world countries to bring up a visualisation of that countries top 10 data (where available) from each of the included datasets.
 
-Method:
-Extract multiple data sources for countries that provide details of 'fun facts'
-Transform this data and load it to a country_facts database
-Create API for accessing data from the country_facts database
-Call data from API onto interactve dashboard visualisation of the data where users can filter by country to change dashboard display
+Why: 
+To make a visualisation which is fun and somewhat unexpected.  
 
-Step one:
-Agree idea and scope of project
-Clone Project2 Repo (Kevin https://github.com/ktruong14/project-2)
-Search for data sources and upload to repo
+Who for: 
+Students who enjoy a frivolous distraction from studying, like us!
 
-Step two:
-Clean and transform data sets to suit analysis aims (i.e. fact(s) per country)
-Load into a database (database type to be agreed)
-Build flask app to serve database data via API(s)
+What: 
+Three non-related rankings of topics presumed to be of interest to students where data is available for different countries.  Given the rationale to be fun, we chose popular music streaming charts, ramen noodle ratings and university rankings.
 
-Step three:
-Build web page using HTML and CSS
-Build JS visualisations to display as dashboard on web page
-Create presentation for Project presentation to class
+How:
+Each member of the project team searched for a ranked topic dataset and scraped/extracted this data.
+Data was transformed and added to a sqlite db.
+Using sqlalchemy and flask, the jsonifed data from the sqlite db was served up on 4 api endpoints.
+JS was used to access the api json data and tables of ranked data plus plotly visualisations of the ranked data were built.
+HTML and CSS files were added and the app was depolyed using Heroku. 
 
+Extracted data sources:
+Spotify Charts were scraped using BeautifulSoup from: https://spotifycharts.com/regional/ 
 
+Ramen Ratings were discovered on Kaggle downloadable as a CSV file from: https://www.kaggle.com/residentmario/ramen-ratings
+
+University Rankings were scraped using Pandas.read_html function from: https://cwur.org/2020-21.php 
 
 
