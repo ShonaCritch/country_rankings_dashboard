@@ -20,17 +20,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #engine = create_engine(f"sqlite:///{database_path}")
 #engine = create_engine("sqlite:///.countries_info_sqlite")
 
-# reflect an existing database into a new model
-#Base = automap_base()
-# reflect the tables
-#Base.prepare(engine, reflect=True)
-
-# Save references to the tables
-#spotify = Base.classes.spotify_rankings
-#ramen = Base.classes.ramen_rankings
-#uni = Base.classes.uni_rankings
-#codes = Base.classes.country_codes
-
 #################################################
 # Flask Setup
 #################################################
