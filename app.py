@@ -11,8 +11,15 @@ from flask import Flask, render_template
 #################################################
 # Database Setup
 #################################################
-database_path = "./sqlite_db/countries_info_sqlite.db"
-engine = create_engine(f"sqlite:///{database_path}")
+
+from flask_sqlalchemy import SQLAlchemy
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "sqlite:///db.sqlite"
+
+# Remove tracking modifications
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+#database_path = "./sqlite_db/countries_info_sqlite.db"
+#engine = create_engine(f"sqlite:///{database_path}")
 #engine = create_engine("sqlite:///.countries_info_sqlite")
 
 # reflect an existing database into a new model
