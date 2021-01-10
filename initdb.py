@@ -1,5 +1,5 @@
-#from <name of sqlite db>.app import db
-from countries_info_sqlite.app import db
+#from <name of sqlite db folder>.app import db
+from sqlite_db.app import db
 
 # db.drop_all()
 db.create_all()
