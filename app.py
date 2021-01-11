@@ -24,8 +24,11 @@ engine = create_engine(f"sqlite:///{database_path}")
 # Flask Setup
 #################################################
 app = Flask(__name__)
-
-
+#from flask_sqlalchemy import SQLAlchemy
+#app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///sqlite_db/countries_info_sqlite.db"
+#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+#db = SQLAlchemy(app)
+#
 #################################################
 # Flask Routes
 #################################################
