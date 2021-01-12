@@ -161,7 +161,7 @@ function buildRamenChart(count) {
     ];
 
     var barLayout = {
-      title: "Top 10 Rated Ramen",
+      title: "Top Rated Ramen",
       // hovermode : false,
       yaxis: {autorange: true,
         showgrid: false,
