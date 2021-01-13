@@ -50,7 +50,7 @@ Then the cleaned dataframes were uploaded into the SQLite database.
 Using Flask and SQLAlchemy endpoints were created to serve up jsonified data from each of the tables in the SQLite DB. Each team member was then able to use the code (shared in the project GitHub repo) to access the db data locally on their computer, for use with creating the visualisations. The flask app.py file was also ready for later use when deploying the app to the cloud app server Heroku
 
 ## JavaScript Visualisation:
-The Spotify data and University rankings were visualised in descending order of streams for Spotify and national rank for universities in separate tables using JS. The Ramen ratings descending from highest ranked 5 to 1 were visualised using a Plotly JS bar chart.  All the visualisations were linked to a filter enabling each of the 20 countries to be individually selected and dynamically updates the visualisations for the selected country. In addition, a world map was added to highlight the selected country.
+The Spotify data and University rankings were visualised in descending order of streams for Spotify and national rank for universities in separate tables using JS. The Ramen ratings descending from highest ranked 5 to lowest ranked 1 were visualised using a Plotly JS bar chart.  All the visualisations were linked to a filter, enabling each of the 20 countries to be individually selected to dynamically update the visualisations for the selected country. In addition, a world map was added to highlight the selected country.
 
 # Project outcome
 
